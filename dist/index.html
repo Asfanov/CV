@@ -4,26 +4,295 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>CV</title>
 <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
 <body>
   <div class="wraper">
+    <div class="language-switch-botton">
+      <input type="radio" id="toggle-button-en" name="language-button"
+      class="toggle-button" value="en" checked>
+      <label for="toggle-button-en" class="text text-en">EN</label>
+      <input type="radio" id="toggle-button-ru" name="language-button" class="toggle-button" value="ru">
+      <label for="toggle-button-ru" class="text text-ru">RU</label>
+    </div>
     <header class="header">
-        <div class="header__avatar">
+        <div class="header__avatar width-30">
           <img src="assets/img/photo_Asfanovc233867817a6f5fd9822.jpeg" alt="my_photo">
         </div>
         <div class="main-information">
-          <h1>Salavat Asfanov</h1>
-          <h3>Frontend developer</h3>
-          <div class="main-information__adress">
-            <div class="main-information__location">
-              <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNiAzQzIxLjM4NDggMyAyNiA3LjYxNTIyIDI2IDEzQzI2IDE4LjM4NDggMTYgMjkgMTYgMjlDMTYgMjkgNiAxOC4zODQ4IDYgMTNDNiA3LjYxNTIyIDEwLjYxNTIgMyAxNiAzWiIgc3Ryb2tlPSIjNDY0NjQ2IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cmVjdCB4PSIxMSIgeT0iOCIgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiByeD0iNSIgc3Ryb2tlPSIjNDY0NjQ2IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K" alt="Location">
+            <div class="main-information__container english">
+              <h1>Salavat Asfanov</h1>
+              <h3>Frontend developer</h3>
+              <div class="main-information__adress">
+                <div class="main-information__location">
+                  <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNiAzQzIxLjM4NDggMyAyNiA3LjYxNTIyIDI2IDEzQzI2IDE4LjM4NDggMTYgMjkgMTYgMjlDMTYgMjkgNiAxOC4zODQ4IDYgMTNDNiA3LjYxNTIyIDEwLjYxNTIgMyAxNiAzWiIgc3Ryb2tlPSIjNDY0NjQ2IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cmVjdCB4PSIxMSIgeT0iOCIgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiByeD0iNSIgc3Ryb2tlPSIjNDY0NjQ2IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K" alt="Location">
+                </div>
+                <div class="adress">Russian Federation. Izhevsk</div>
+              </div>
             </div>
-            <div class="adress">Russian Federation. Izhevsk</div>
-          </div>
+
+            <div class="main-information__container russian hidden">
+              <h1>Салават Асфанов</h1>
+              <h3>Фронтенд разработчик</h3>
+              <div class="main-information__adress">
+                <div class="main-information__location">
+                  <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNiAzQzIxLjM4NDggMyAyNiA3LjYxNTIyIDI2IDEzQzI2IDE4LjM4NDggMTYgMjkgMTYgMjlDMTYgMjkgNiAxOC4zODQ4IDYgMTNDNiA3LjYxNTIyIDEwLjYxNTIgMyAxNiAzWiIgc3Ryb2tlPSIjNDY0NjQ2IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cmVjdCB4PSIxMSIgeT0iOCIgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiByeD0iNSIgc3Ryb2tlPSIjNDY0NjQ2IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K" alt="Location">
+                </div>
+                <div class="adress">Российская федерация. Ижевск</div>
+              </div>
+            </div>
         </div>
     </header>
 
+    <section class="section english">
+          <div class="contact width-30 border-bottom-grey">
+            <div class="contact__container">
+                <h3>Contact</h3>
+                <ul>
+                  <li>
+                    <div class="icon">
+                      <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjI0MDQ5IDQuOTQ2MDFMOC40Njc5MiA0LjcwMDUzQzkuMzIwNzcgNC41Mjk5NiAxMC4xODYxIDQuOTMwMTEgMTAuNjA4NSA1LjY5MDRMMTIuNzAyNCA5LjQ1OTQyQzEzLjEzNiAxMC4yNCAxMi45OTk3IDExLjIxMzUgMTIuMzY4MyAxMS44NDQ5TDEwLjk1ODYgMTMuMjU0NkMxMC4zMDk4IDEzLjkwNDIgMTAuMTg2NiAxNC45MTIxIDEwLjY2MDQgMTUuNjk4NUMxMS40NTU1IDE3LjAyMDYgMTIuMzgxMiAxOC4yMDk2IDEzLjQzNzMgMTkuMjY1N0MxNC40OTMzIDIwLjMyMTggMTUuNjgxNiAyMS4yNDY2IDE3LjAwMTkgMjIuMDQwMUMxNy43ODg0IDIyLjUxMTggMTguNzk1IDIyLjM4OCAxOS40NDM5IDIxLjczOTlMMjAuODUzNSAyMC4zMzAyQzIxLjQ4NSAxOS42OTg4IDIyLjQ1ODUgMTkuNTYyNCAyMy4yMzkgMTkuOTk2MUwyNy4wMDgxIDIyLjA5QzI3Ljc2ODQgMjIuNTEyNCAyOC4xNjg1IDIzLjM3NzcgMjcuOTk3OSAyNC4yMzA1TDI3Ljc1MjUgMjUuNDU4QzI3LjYzNTEgMjYuMDQ0MiAyNy4yNjE3IDI2LjU0NzIgMjYuNzMzNyAyNi44Mjc1QzIxLjc3OTkgMjkuNDY4IDE2LjQwNDIgMjcuODg5NSAxMC42MDY2IDIyLjA5MTlDNC44MDg5OCAxNi4yOTQzIDMuMjMwNDQgMTAuOTE4NiA1Ljg3MDk4IDUuOTY0NzhDNi4xNTEzIDUuNDM2NzQgNi42NTQyOSA1LjA2MzM1IDcuMjQwNDkgNC45NDYwMVoiIHN0cm9rZT0iIzQ2NDY0NiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==" alt="phone">
+                    </div>
+                    <div class="number-phone">+7 912 014 95 59</div>
+                  </li>
+                  <a href="mailto:asfanov@gmail.com">
+                    <li>
+                      <div class="icon">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeD0iNCIgeT0iNyIgd2lkdGg9IjI0IiBoZWlnaHQ9IjE4IiByeD0iMiIgc3Ryb2tlPSIjNDY0NjQ2IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNOCAxMUwxNiAxN0wyNCAxMSIgc3Ryb2tlPSIjNDY0NjQ2IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K" alt="mail">
+                      </div>
+                      <div class="number-phone">asfanov@gmail.com</div>
+                    </li>
+                  </a>
+
+                  <a href="https://tlgg.ru/@Asfanov_Salavat">
+                    <li>
+                      <div class="icon">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTIiIHN0cm9rZT0iIzQ2NDY0NiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPGVsbGlwc2UgY3g9IjE2IiBjeT0iMTYiIHJ4PSI2IiByeT0iMTIiIHN0cm9rZT0iIzQ2NDY0NiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggZD0iTTI3IDIxTDUgMjEiIHN0cm9rZT0iIzQ2NDY0NiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGQ9Ik0yNyAxMUw1IDExIiBzdHJva2U9IiM0NjQ2NDYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K" alt="World">
+                      </div>
+                      <div class="number-phone">tg: Asfanov_Salavat</div>
+                    </li>
+                  </a>
+
+                </ul>
+            </div>
+          </div>
+
+          <div class="about-me width-56 border-bottom-grey">
+            <div class="about-me__container">
+              <h3>About me</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga ratione modi molestias eum pariatur quod id optio ipsum at aliquam! Quasi commodi nemo quod soluta! Quo quisquam voluptatum vel suscipit, similique ad doloremque aliquam, dolorem quam consectetur ipsam, sint dolores.
+              </p>
+            </div>
+          </div>
+    </section>
+
+    <section class="section russian hidden">
+      <div class="contact width-30">
+        <div class="contact__container">
+            <h3>Контакты</h3>
+            <ul>
+              <li>
+                <div class="icon">
+                  <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjI0MDQ5IDQuOTQ2MDFMOC40Njc5MiA0LjcwMDUzQzkuMzIwNzcgNC41Mjk5NiAxMC4xODYxIDQuOTMwMTEgMTAuNjA4NSA1LjY5MDRMMTIuNzAyNCA5LjQ1OTQyQzEzLjEzNiAxMC4yNCAxMi45OTk3IDExLjIxMzUgMTIuMzY4MyAxMS44NDQ5TDEwLjk1ODYgMTMuMjU0NkMxMC4zMDk4IDEzLjkwNDIgMTAuMTg2NiAxNC45MTIxIDEwLjY2MDQgMTUuNjk4NUMxMS40NTU1IDE3LjAyMDYgMTIuMzgxMiAxOC4yMDk2IDEzLjQzNzMgMTkuMjY1N0MxNC40OTMzIDIwLjMyMTggMTUuNjgxNiAyMS4yNDY2IDE3LjAwMTkgMjIuMDQwMUMxNy43ODg0IDIyLjUxMTggMTguNzk1IDIyLjM4OCAxOS40NDM5IDIxLjczOTlMMjAuODUzNSAyMC4zMzAyQzIxLjQ4NSAxOS42OTg4IDIyLjQ1ODUgMTkuNTYyNCAyMy4yMzkgMTkuOTk2MUwyNy4wMDgxIDIyLjA5QzI3Ljc2ODQgMjIuNTEyNCAyOC4xNjg1IDIzLjM3NzcgMjcuOTk3OSAyNC4yMzA1TDI3Ljc1MjUgMjUuNDU4QzI3LjYzNTEgMjYuMDQ0MiAyNy4yNjE3IDI2LjU0NzIgMjYuNzMzNyAyNi44Mjc1QzIxLjc3OTkgMjkuNDY4IDE2LjQwNDIgMjcuODg5NSAxMC42MDY2IDIyLjA5MTlDNC44MDg5OCAxNi4yOTQzIDMuMjMwNDQgMTAuOTE4NiA1Ljg3MDk4IDUuOTY0NzhDNi4xNTEzIDUuNDM2NzQgNi42NTQyOSA1LjA2MzM1IDcuMjQwNDkgNC45NDYwMVoiIHN0cm9rZT0iIzQ2NDY0NiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==" alt="phone">
+                </div>
+                <div class="number-phone">+7 912 014 95 59</div>
+              </li>
+              <a href="mailto:asfanov@gmail.com">
+                <li>
+                  <div class="icon">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeD0iNCIgeT0iNyIgd2lkdGg9IjI0IiBoZWlnaHQ9IjE4IiByeD0iMiIgc3Ryb2tlPSIjNDY0NjQ2IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNOCAxMUwxNiAxN0wyNCAxMSIgc3Ryb2tlPSIjNDY0NjQ2IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K" alt="mail">
+                  </div>
+                  <div class="number-phone">asfanov@gmail.com</div>
+                </li>
+              </a>
+
+              <a href="https://tlgg.ru/@Asfanov_Salavat">
+                <li>
+                  <div class="icon">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTIiIHN0cm9rZT0iIzQ2NDY0NiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPGVsbGlwc2UgY3g9IjE2IiBjeT0iMTYiIHJ4PSI2IiByeT0iMTIiIHN0cm9rZT0iIzQ2NDY0NiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggZD0iTTI3IDIxTDUgMjEiIHN0cm9rZT0iIzQ2NDY0NiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGQ9Ik0yNyAxMUw1IDExIiBzdHJva2U9IiM0NjQ2NDYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K" alt="World">
+                  </div>
+                  <div class="number-phone">tg: Asfanov_Salavat</div>
+                </li>
+              </a>
+
+            </ul>
+        </div>
+      </div>
+
+      <div class="about-me width-56">
+        <h3>Обо мне</h3>
+        <p>
+          Предварительные выводы неутешительны: консультация с широким активом является качественно новой ступенью экономической целесообразности принимаемых решений. В своём стремлении повысить качество жизни, они забывают, что синтетическое тестирование однозначно определяет каждого участника как способного принимать собственные решения касаемо вывода текущих активов.
+        </p>
+      </div>
+    </section>
+
+    <section class="section english section-2">
+      <div class="skills width-30 border-bottom-grey">
+          <div class="skills__container">
+            <h3>
+              Skills
+            </h3>
+            <ul>
+              <li>HTML & CSS</li>
+              <li>responsive & adaptive layout</li>
+              <li>sass, bootstrap</li>
+              <li>JavaScript</li>
+              <li>Git</li>
+              <li>webpack</li>
+            </ul>
+          </div>
+      </div>
+      <div class="experience width-56 border-bottom-grey">
+        <div class="experience__container">
+          <h3>Experience</h3>
+          <p>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iure qui similique voluptates illum est rem eum ducimus aperiam ad velit id accusamus sequi distinctio fugiat aspernatur, ipsa veniam hic.
+          </p>
+        </div>
+      </div>
+
+
+   
+      <div class="swap width-30">
+        <div class="languages border-bottom-grey">
+          <div class="languages__container">
+            <h3>
+              Languages
+            </h3>
+            <ul>
+              <li>English - A2</li>
+              <li>Russian - Native</li>
+            </ul>
+          </div>
+        </div>
+        <div class="education border-bottom-grey">
+          <div class="education__container">
+            <h3>
+              Education
+            </h3>
+            <ul class="education__list">
+              <li>
+                <ul>
+                  <li>2020 - to date</li>
+                  <li>
+                    <div class="inter-500">programing in computer systems
+                    </div>
+                  </li>
+                  <li>
+                    international Eastern European University
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>2021 august - 2022 january</li>
+                  <li>
+                    <div class="inter-500">
+                      Frontend-developer
+                    </div>
+                  </li>
+                  <li>IT Step Academy</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>2022 february - to date</li>
+                  <li>
+                    <div class="inter-500">Frontend-developer</div>
+                  </li>
+                  <li>RS school</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section russian hidden section-2">
+      <div class="skills width-30 border-bottom-grey">
+          <div class="skills__container">
+            <h3>
+              Навыки
+            </h3>
+            <ul>
+              <li>HTML & CSS</li>
+              <li>responsive & adaptive layout</li>
+              <li>sass, bootstrap</li>
+              <li>JavaScript</li>
+              <li>Git</li>
+              <li>webpack</li>
+            </ul>
+          </div>
+      </div>
+      <div class="experience width-56 border-bottom-grey">
+        <div class="experience__container">
+          <h3>Опыт</h3>
+          <p>
+            А также сторонники тоталитаризма в науке представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть функционально разнесены на независимые элементы. Предварительные выводы неутешительны: сложившаяся структура организации требует определения и уточнения экспериментов, поражающих по своей масштабности и грандиозности! Приятно, граждане, наблюдать, как независимые государства обнародованы.
+          </p>
+        </div>
+      </div>
+
+
+   
+      <div class="swap width-30">
+        <div class="languages border-bottom-grey">
+          <div class="languages__container">
+            <h3>
+              Языки
+            </h3>
+            <ul>
+              <li>Русский - родной</li>
+              <li>Английский - А2</li>
+            </ul>
+          </div>
+        </div>
+        <div class="education border-bottom-grey">
+          <div class="education__container">
+            <h3>
+              Образование
+            </h3>
+            <ul class="education__list">
+              <li>
+                <ul>
+                  <li>2020 - по настоящее время</li>
+                  <li>
+                    <div class="inter-500">программирование в компьютерных системах
+                    </div>
+                  </li>
+                  <li>
+                    Международный Восточно-Европейский Университет
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>2021 август - 2022 январь</li>
+                  <li>
+                    <div class="inter-500">
+                      Фронтэнд-разработчик
+                    </div>
+                  </li>
+                  <li>Академия шаг</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>2022 февраль - по настоящее время</li>
+                  <li>
+                    <div class="inter-500"> Фронтэнд-разработчик</div>
+                  </li>
+                  <li>RS school</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </body>
 </html>
