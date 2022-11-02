@@ -1,0 +1,93 @@
+@mixin border-bottom {
+  border-bottom: 1px solid #ccc;
+}
+
+.header{
+  width: 100%;
+  min-width: 880px;
+  max-width: 1000px;
+  height: 480px;
+  margin: 0 auto;
+  display: flex;
+  overflow: hidden;
+  @media screen  and (max-width:640px){
+    width: 100%;
+    height: 500px;
+    min-width: auto;
+    max-width: auto;
+    flex-direction: column;
+  }
+  @media screen  and (max-width:340px){
+    height: 600px;
+  }
+  .header__avatar {
+    @include border-bottom;
+    @media screen  and (max-width:640px){
+    border-bottom: none;
+    margin-top: 50px;
+    }
+
+    img{
+      width: 264px;
+      height: 264px;
+      border-radius: 50%;
+      overflow: hidden;
+      position: relative;
+      top: 168px;
+      left: 7%;
+      object-fit: cover;
+      @media screen and (max-width: 1000px) {
+        left: 0;
+      }
+      @media screen  and (max-width:640px){
+        width: 100%;
+        border-radius: 0 0 5px 5px;
+        top: 0px;
+      }
+      
+    }
+  }
+
+  .main-information{
+    width: 56%;
+    border-bottom: 1px solid #ccc;
+    @media screen  and (max-width:640px){
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
+}
+.main-information__container{
+  height: 168px;
+  position: relative;
+  top: 222px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media screen  and (max-width:640px){
+    width: 90%;
+    height: 145px;
+    margin: 0 auto;
+    top: 20px;
+  }
+  @media screen  and (max-width:340px){
+    height: 210px;
+    h1{
+      font-size: 1.8em;
+    }
+    h3{
+      font-size: 1.3em;
+    }
+  }
+
+  h3{
+    margin: 0;
+    padding-bottom: 0;
+    font-weight: 300;
+  }
+
+   .main-information__adress{
+    display: flex;
+  }
+}

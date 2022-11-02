@@ -1,0 +1,44 @@
+.section-2{
+  padding-bottom: 100px;
+
+  .skills, .languages__container{
+    ul{
+      list-style-type: disc;
+      @media screen  and (max-width:360px){
+        list-style-type: none;
+      }
+      li{
+        padding-bottom: 0.5em;
+        &:last-child{
+          padding-bottom: 2em;
+        }
+      }
+
+    }
+  }
+  .experience__container{
+    p{
+      padding-bottom: 2em;
+    }
+  }
+  .education{
+    &__list{
+      list-style-type: disc;
+      @media screen  and (max-width:360px){
+        list-style-type: none;
+      }
+      ul{
+        padding-bottom: 2em;
+      }
+    }
+  }
+  .skills__container, 
+  .experience__container, 
+  .languages__container,
+  .education__container{
+      @media screen  and (max-width:640px){
+        width: 90%;
+        margin: 0 auto;
+    }
+  }
+}

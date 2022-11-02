@@ -1,0 +1,25 @@
+.language-switch-botton{
+  width: 80px;
+  position: absolute;
+  top: 0%;
+  left: 70%;
+  border: 2px solid rgb(185, 41, 41);
+  display: flex;
+  justify-content: space-between;
+  input{
+    display: none;
+    &:checked + label{
+      background-color: rgb(187, 14, 14);
+    }
+  }
+  label{
+    width: 50%;
+    border: 1px solid black;
+    text-align: center;
+    
+    &:hover{
+      background-color: rgb(112, 112, 19);
+    }
+  }
+  
+}
